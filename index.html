@@ -39,56 +39,65 @@
     <img src="images/title.jpg" alt="トップ画像" class="top-image">
   </div>
  
-  <div class="upper-content">
-    <h2 class="heading-name">求人情報</h2>
-    <ul class="messages">
-      <li class="message">
-        <div class="message-date">中途採用</div>
-        <div>【株式会社】<b>東証一部上場</b>求人募集</div>
-      </li>
-      <li class="message">
-        <div class="message-date">新卒採用</div>
-        <div>【株式会社】<b>M&A</b>求人募集</div>
-      </li>
-      <li class="message">
-        <div class="message-date">新卒募集</div>
-        <div>【株式会社】<b>新規事業開拓</b>求人募集</div>
-      </li>
-      <li class="message">
-        <div class="message-date">新卒募集</div>
-        <div>【株式会社】<b>役員候補募集</b>求人募集</div>
-      </li>
-      <li class="message">
-        <div class="message-date">中途採用</div>
-        <div>【株式会社】<b>インフラエンジニア募集</b>未経験歓迎</div>
-      </li>
-    </ul>
+  <div class="center-content">
+    
+
   </div>
   <div class="middle-content">
-    <!-- 『スタイリスト紹介』を表示する -->
-    <form action="cgi-bin/example.cgi" method="post">
-      <p>検索したいキーワードを入力してください。</p>
-      <input type="search" name="search" placeholder="キーワードを入力">
-      <input type="submit" name="submit" value="検索">
-    </form>    
-    <h2 class="heading-name">Career Ladderの強み</h2>
-        <ul class="stylist-list">
-          <li>
-            <img src="images/M&A特集.jpg" alt="staff1" class="stylist-image">
-            <h4 class="stylist-name">M&A業界シェアNo1実績があるからこそ信用できる！</h4>
-          </li>
-          <li>
-            <img src="images/ベンチャー特化.jpg" alt="staff2" class="stylist-image">
-            <h4 class="stylist-name">ベンチャーに強い、挑戦するもの全員の味方！</h4>
-          </li>
-          <li>
-            <img src="images/Career LadderのCM.jpg" alt="staff3" class="stylist-image">
-            <h4 class="stylist-name">就職は誰もが不安、そんな人たちの橋渡し役です！</h4>
-          </li>
-        </ul>
+    <!-- 『検索フォーム』を表示する -->
+    
+    <form method=”POST” action=”#”>
+      <p>職種を選択してくだい。</p>
+        
+      
+      <input type="text" name="list" list="syokusyu" placeholder="フリーワード" autocomplete="off">
+        <datalist id="syokusyu">
+          <option value="こだわらない">
+          <option value="M&A">
+        　<option value="ベンチャー">
+        　<option value="営業職">
+        </datalist>
+        <p>業種を選択してください。</p>
+        <input type="text" name="list" list="syokusyu" placeholder="フリーワード" autocomplete="off">
+        <datalist id="syokusyu">
+          <option value="こだわらない">
+          <option value="M&A">
+        　<option value="ベンチャー">
+        　<option value="営業職">
+        </datalist>
+        <p>エリアを選択してください。</p>
+        <input type="text" name="list" list="syokusyu" placeholder="フリーワード" autocomplete="off">
+        <datalist id="syokusyu">
+          <option value="こだわらない">
+          <option value="M&A">
+        　<option value="ベンチャー">
+        　<option value="営業職">
+        </datalist>
+        <!-- 『チェックリスト』を表示する -->
+        <label class="my-checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          第２新卒
+        </label>
+        <label class="my-checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          職種未経験可
+        </label>
+        <label class="my-checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          英語を活かせる
+        </label>
+        <input type="submit" value="検索" class="send">
+        
+        <!-- <input type=”submit” value=”検索”> -->
+
+    </form>
   </div>
   <div class="bottom-content">
     <!-- 『フォーム』を表示する -->
+    
   </div>
 </div>
 

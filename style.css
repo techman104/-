@@ -18,7 +18,7 @@ ul,li {
 /* ヘッダー */
 header {
   height: 50px;
-  background-color: #f0f0f0;
+  background-color: rgba(0, 204, 255, 0.671);
   padding: 10px 0;
   display: flex;
 }
@@ -43,8 +43,31 @@ li {
 }
 
 /* first-viewクラスからbottom-contentクラスまでの要素の親要素 */
-.contents {
-  background-color: white;
+.middle-content {
+  height: 400px;
+  background-color: rgb(179, 235, 245);
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.center-content {
+  height: 400px;
+  background-color: rgb(179, 235, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  margin: 10px 50px ;
+}
+
+.my-checkbox {
+  display: block;
+  position: relative;
+  margin: 1em 0;
+  padding-left: 28px;
+  cursor: pointer;
+  user-select: none; /* テキストの選択を防ぐ */
 }
 
 .first-view {
@@ -52,20 +75,19 @@ li {
 }
 
 .top-image {
-  height: 10%;
+  height: 70vh;
   width: 100%;
 }
 
 .upper-content {
   height: 450px ;
-  margin: 0 160px;
 }
 
 .heading-name {
-  text-align: center;
+  text-align: left;
   border-bottom: 1px solid red;
   width: 200px;
-  margin: 40px auto;
+
 }
 
 .messages {
@@ -85,8 +107,9 @@ li {
 
 /* スタイリスト紹介 */
 .middle-content {
-  height: 450px ;
-  margin: 0 160px;
+  height: 400px ;
+  width: 300px;
+  margin: 10px 50px ;
 }
 
 /* フォーム */
@@ -99,4 +122,14 @@ li {
 footer {
   height: 50px;
   background-color: #f0f0f0;
+}
+
+.send {
+  width: 200px;
+  padding: 15px;
+  margin: 30px ;
+  border: 1px solid white;
+  color: white;
+  background-color: rgb(55, 0, 255);
+  display: block;
 }
