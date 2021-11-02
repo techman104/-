@@ -44,21 +44,23 @@ li {
 
 /* first-viewクラスからbottom-contentクラスまでの要素の親要素 */
 .middle-content {
-  height: 400px;
+  height: 400px ;
+  width: 300px;
+  margin: 10px 50px ;
   background-color: rgb(179, 235, 245);
   display: flex;
-  justify-content: left;
+  justify-content: space-around;
   align-items: left;
 }
 
 .center-content {
   height: 400px;
-  background-color: rgb(179, 235, 245);
+  background-color: rgba(255, 255, 255, 0.192);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 1000px;
-  margin: 10px 50px ;
+  margin: 10px 500px ;
 }
 
 .my-checkbox {
@@ -74,7 +76,7 @@ li {
   height: 10vh;
 }
 
-.top-image {
+.slider{
   height: 70vh;
   width: 100%;
 }
